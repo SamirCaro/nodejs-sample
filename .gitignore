@@ -1,163 +1,43 @@
-# ========================================
-# Dependencies & Package Managers
-# ========================================
+# .dockerignore optimizado para la aplicaciÃ³n de tareas (Todo) en Node.js + React
+# Basado en la estructura real del proyecto
+
+# Control de versiones
+.git/
+.github/
+.gitignore
+
+# Dependencias (instaladas en el contenedor)
 node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-bun.lockb
-.yarn/
-.pnp/
-.pnp.js
 
-# ========================================
-# Build Outputs & Distribution
-# ========================================
+# Salidas de construcciÃ³n (construidas en el contenedor)
 dist/
-build/
-out/
-docs/
-.next/
-.nuxt/
-*.tsbuildinfo
-.turbo/
 
-# ========================================
-# Environment & Configuration
-# ========================================
-.env
-.env.*
-!.env.example
-!.env.template
-.envrc
-.tool-versions
+# Archivos de entorno
+.env*
 
-# ========================================
-# Development & Testing
-# ========================================
-# Test outputs
-coverage/
-.nyc_output/
-*.lcov
-.coverage/
-junit.xml
-test-results/
-playwright-report/
-test-results.xml
-
-# Development cache
-.cache/
-.tmp/
-.temp/
-*.tmp
-*.temp
-
-# ========================================
-# Database Files
-# ========================================
-*.sqlite
-*.sqlite3
-*.db
-*.db-wal
-*.db-shm
-
-# ========================================
-# Logs & Runtime Data
-# ========================================
-logs/
+# Archivos de desarrollo
+.vscode/
 *.log
-pids/
-*.pid
-*.seed
-*.pid.lock
-
-# ========================================
-# IDE & Editor Files
-# ========================================
-# VSCode
-.vscode/settings.json
-.vscode/launch.json
-.vscode/extensions.json
-
-# IntelliJ/WebStorm
-.idea/
-*.iml
-*.iws
-
-# Vim/Emacs
-*.swp
-*.swo
-*~
-.#*
-\#*#
-
-# Sublime Text
-*.sublime-*
-
-# ========================================
-# OS Generated Files
-# ========================================
-# macOS
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-.AppleDouble
-.LSOverride
-
-# Windows
-Thumbs.db
-Thumbs.db:encryptable
-ehthumbs.db
-ehthumbs_vista.db
-Desktop.ini
-$RECYCLE.BIN/
-
-# Linux
-*~
-.fuse_hidden*
-.directory
-.Trash-*
-.nfs*
-
-# ========================================
-# DevOps & Deployment
-# ========================================
-# Docker
-.dockerignore
-
-# Kubernetes
-*.yaml.bak
-*.yml.bak
-
-# Terraform
-*.tfstate
-*.tfstate.*
-.terraform/
-.terraform.lock.hcl
-
-# ========================================
-# Security & Sensitive Data
-# ========================================
-# Certificates & Keys
-*.pem
-*.key
-*.crt
-*.cer
-*.p12
-*.pfx
-
-# Security scanners
-.snyk
-.semgrep.yml
-
-# ========================================
-# Miscellaneous
-# ========================================
+coverage/
 .eslintcache
-.stylelintcache
-.parcel-cache/
-.vite/
-storybook-static/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# DocumentaciÃ³n
+*.md
+docs/
+
+# Configuraciones de despliegue
+compose.yml
+Taskfile.yml
+nodejs-sample-kubernetes.yaml
+
+# Configuraciones no esenciales (mantener configuraciones de construcciÃ³n)
+*.config.js
+!vite.config.ts
+!esbuild.config.js
+!tailwind.config.js
+!postcss.config.js
+!tsconfig.json

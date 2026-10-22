@@ -21,6 +21,10 @@ export default defineConfig({
   server: {
     host: '0.0.0.0', // Required for Docker containers
     port: 5173,
+	watch: {
+      usePolling: true,
+      interval: 100, // Revisa cambios cada 100 milisegundos
+    },
     proxy: {
       '/api': {
         target: 'http://localhost:3000',

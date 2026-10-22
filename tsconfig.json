@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2022",
+    "sourceMap": true,
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "allowJs": true,
     "skipLibCheck": true,
@@ -14,12 +15,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "react-jsx",
-    "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
-      "@/components/*": ["src/client/components/*"],
-      "@/utils/*": ["src/shared/utils/*"],
-      "@/types/*": ["src/shared/types/*"]
+      "@/*": ["./src/*"],
+      "@/components/*": ["./src/client/components/*"],
+      "@/utils/*": ["./src/shared/utils/*"],
+      "@/types/*": ["./src/shared/types/*"]
     }
   },
   "include": ["src/**/*", "vite.config.ts"],

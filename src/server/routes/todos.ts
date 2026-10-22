@@ -9,6 +9,7 @@ const router = Router();
 
 // GET /api/todos - Get all todos
 router.get('/', async (req: Request, res: Response, next: NextFunction) => {
+  debugger;
   try {
     const items = await db.getItems();
     res.json({

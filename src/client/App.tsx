@@ -22,7 +22,7 @@ const App: React.FC = () => {
             <span className="text-2xl">✨</span>
           </div>
 
-          <h1 className="text-3xl font-bold text-white mb-3">Modern Todo App</h1>
+          <h1 className="text-3xl font-bold text-white mb-3">My Todo App</h1>
           <p className="text-white/80 text-base mb-4 max-w-xl mx-auto">
             Experience the future of task management with our sleek, TypeScript-powered application
           </p>
